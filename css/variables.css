@@ -1,0 +1,63 @@
+/*==================================================
+                VARIÁVEIS
+==================================================*/
+
+:root{
+
+    /* Cores */
+
+    --cor-primaria:#6F3E1E;
+
+    --cor-secundaria:#F4B400;
+
+    --cor-hover:#FFD54F;
+
+    --cor-escura:#2F1A10;
+
+    --cor-clara:#FFF8EE;
+
+    --cor-branca:#FFFFFF;
+
+    --cor-texto:#555;
+
+    --cor-titulo:#2B2B2B;
+
+    --cor-sucesso:#2E7D32;
+
+    --cor-perigo:#D32F2F;
+
+    --cor-fundo:#FAF8F5;
+
+    /* Sombras */
+
+    --sombra-pequena:0 5px 15px rgba(0,0,0,.08);
+
+    --sombra-media:0 12px 30px rgba(0,0,0,.12);
+
+    --sombra-grande:0 20px 45px rgba(0,0,0,.18);
+
+    /* Bordas */
+
+    --radius:18px;
+
+    --radius-card:25px;
+
+    --radius-btn:40px;
+
+    /* Espaçamentos */
+
+    --esp-1:10px;
+
+    --esp-2:20px;
+
+    --esp-3:40px;
+
+    --esp-4:70px;
+
+    --esp-5:120px;
+
+    /* Fonte */
+
+    --fonte:'Poppins',sans-serif;
+
+}

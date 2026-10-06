@@ -1,0 +1,336 @@
+/* ================================
+   PÁGINA DE PLANOS
+================================ */
+
+main {
+    background: #fffdf7;
+}
+
+main > section {
+    padding: 60px 20px 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ================================
+   TÍTULO DA PÁGINA
+================================ */
+
+.container > h2 {
+    text-align: center;
+
+    font-size: 42px !important;
+
+    color: #744c10 !important;
+
+    margin: 20px 0 12px !important;
+
+    line-height: 1.1;
+}
+
+.container > p {
+    text-align: center;
+
+    color: #6b625b;
+
+    font-size: 16px;
+
+    margin-bottom: 45px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================
+   ÁREA DOS CARDS
+================================ */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 320px);
+
+    justify-content: center;
+
+    gap: 28px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    background: #ffffdf;
+
+    padding: 40px;
+
+    border-radius: 22px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.card {
+    position: relative;
+
+    background: #ffffff;
+
+    border: 1px solid #eee5d7;
+    border-radius: 14px;
+
+    width: 320px;
+    min-height: 500px;
+
+    box-sizing: border-box;
+
+    padding: 28px 28px 26px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 10px 30px rgba(80, 50, 20, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* ================================
+   PREMIUM DESTACADO
+================================ */
+
+.card:nth-child(2) {
+    border: 2px solid #f4b400;
+}
+
+
+/* ================================
+   EFEITO MOUSE
+================================ */
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(80, 50, 20, 0.14);
+}
+
+
+/* ================================
+   TÍTULO DO PLANO
+================================ */
+
+.card h3 {
+    color: #744c10;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    margin: 5px 0 12px;
+
+    line-height: 1.25;
+
+    min-height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ================================
+   PREÇO
+================================ */
+
+.card h2 {
+    color: #2f2119;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    margin: 0 0 20px;
+
+    min-height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    line-height: 1.1;
+}
+
+
+/* ================================
+   BENEFÍCIOS
+================================ */
+
+.card p {
+    text-align: left;
+
+    color: #62584f;
+
+    font-size: 15px;
+
+    margin: 0;
+
+    padding: 9px 0;
+
+    line-height: 1.35;
+
+    border-bottom: 1px solid #f3eee6;
+}
+
+.card p:last-of-type {
+    border-bottom: none;
+}
+
+
+/* ================================
+   FORMULÁRIO
+================================ */
+
+.card form {
+    margin-top: auto;
+
+    width: 100%;
+}
+
+
+/* ================================
+   BOTÃO
+================================ */
+
+.btn-contratar {
+    display: block;
+
+    width: 100%;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #f4b400;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.btn-contratar:hover {
+    background: #d99500;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   RESPONSIVO - TABLET
+================================ */
+
+@media (max-width: 1100px) {
+
+    .cards {
+        grid-template-columns: repeat(3, 290px);
+
+        padding: 30px 20px;
+    }
+
+    .card {
+        width: 290px;
+    }
+
+}
+
+
+/* ================================
+   RESPONSIVO - CELULAR
+================================ */
+
+@media (max-width: 950px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        max-width: 360px;
+    }
+
+    .card {
+        width: 320px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* ================================
+   CELULAR PEQUENO
+================================ */
+
+@media (max-width: 500px) {
+
+    main > section {
+        padding: 45px 15px 60px;
+    }
+
+    .container > h2 {
+        font-size: 34px !important;
+    }
+
+    .container > p {
+        font-size: 15px;
+
+        margin-bottom: 35px;
+    }
+
+    .cards {
+        padding: 20px 10px;
+
+        border-radius: 16px;
+    }
+
+  .card {
+    width: 100%;
+    min-height: 500px;
+    padding: 26px 22px;
+}
+
+    .card h3 {
+        font-size: 21px;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .btn-contratar {
+        font-size: 14px;
+    }
+
+}
